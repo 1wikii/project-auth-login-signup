@@ -1,0 +1,250 @@
+/*=== Google Font ===*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+body{
+   margin: 0;
+   height: 150vh;
+   font-family: var(--font-roboto);
+   background-image: url('../assets/bg-img.png');
+   background-size: cover;
+   background-position: center;
+}
+
+/*----------------WARNING TEXT-----------------*/
+p{                            /* all the error text using P tag */
+   margin: 0;
+   padding: 5px 10px;
+   font-style: italic;
+   border-radius: 5px;
+   color: var(--color-red);
+   background-color: var(--color-soft-red);
+}
+
+a{
+   text-decoration: none;
+}
+
+/*----------------RESPONSIVE P-----------------*/
+@media(max-width: 400px){
+   p{
+      font-size: 11px;
+   }
+}
+
+
+.div-center-container {    /* Container DIV */
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.form-center-container {    /* FORM Tag */
+   padding: 0px 20px;
+   margin: auto;
+   margin-top: 50px;
+   border-radius: 10px;
+   min-width: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--color-white);
+}
+/*-----------------RESPONSIVE FORM---------------------*/
+@media (min-width: 300px) {    /* screen above 1000px */
+   .form-center-container{
+      width: 70%;
+   }
+}
+
+@media (min-width: 600px){    /* screen above 600px */
+   .form-center-container{
+      width: 40%;
+   }
+}
+
+@media (min-width: 1000px){    /* screen above 600px */
+   .form-center-container{
+      width: 30%;
+   }
+}
+
+
+.title-text{
+   margin: 40px 0 60px 0;
+   font-size: 30px;
+   font-weight: bold;
+   color: var(--color-darkest-blue);
+}
+/*-----------------RESPONSIVE CREATE TEXT---------------------*/
+@media (max-width: 400px){
+   .title-text{
+      font-size: 26px;
+   }
+}
+
+
+.input-container{
+   width: 100%;
+}
+.username-container,
+.email-container,
+.password-container{
+   box-sizing: border-box;
+   padding: 10px 10px 10px 10px;
+   width: 100%;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   
+   background-color: var(--color-darker-white);
+}
+.icon-username,
+.icon-email,
+.icon-password{
+   width: 30px;
+   margin-right: 10px;
+}
+
+
+.col-input-username,
+.col-input-email,
+.col-input-password,
+.col-input-password-confirm {
+   width: 100%;
+   border-radius: 5px;
+   text-align: left;
+   border-style: none;
+   outline: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1rem;
+   font-weight: bold;
+
+   background-color: var(--color-darker-white);
+}
+.col-input-password-confirm,
+.col-input-password{
+   padding-right: 50px;
+}
+
+.toggle-button-icon-eye-confirm,
+.toggle-button-icon-eye{
+   position: absolute;
+   top: 50%;                     /* Align the top of the button at 50% of the container */
+   transform: translateY(-50%); /* Adjust for the height of the button */
+   right: 10px;
+   padding: 2px 6px;
+   font-size: 20px;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   transform: .3s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--color-darker-white);
+}
+.icon-eye{
+    width: 20px;
+    max-width: 20px;
+    height: 20px;
+}
+
+.login-sign-up-button-forgot-password,
+.login-sign-up-button{
+   margin: 20px 0 40px 0;
+   padding: 15px 20px;
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.4s;
+   background-color: var(--color-bright-blue);
+   color: var(--color-white);
+}
+.login-sign-up-button-forgot-password{
+   margin-bottom: 20px;
+}
+.login-sign-up-button-forgot-password:hover,
+.login-sign-up-button:hover {
+   color: var(--color-darker-white);
+   background-color: var(--color-dark-blue);
+}
+
+
+.account-text,
+.account-text-a{
+   color: var(--color-darkest-blue);
+   font-weight: 500;
+   font-size: 18px;
+
+   white-space: nowrap;
+}
+.account-text-a{
+   padding: 0;
+   margin: 0;
+   font-weight: bold;
+   font-style: italic;
+   color: var(--color-bright-blue);
+}
+.account-text-a:hover{
+   color: var(--color-dark-blue);
+}
+/*-----------------RESPONSIVE ACCOUNT TEXT---------------------*/
+@media ( max-width: 400px ){
+   .account-text,
+   .account-text-a{
+      font-size: 16px;
+      white-space: normal;
+   }
+}
+
+
+/*--------------WARNING TEXT--------------*/
+
+.password-error-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.error-text{
+   flex: 1;
+}
+.error-forgot-text{
+   margin: 5px 0 0 5px;
+   cursor: pointer;
+}
+.error-forgot-text-a{
+   font-weight: bold;
+   color: rgba(0, 0, 0, 0.575);
+}
+.error-forgot-text-a:hover{
+   color: rgba(0, 0, 0, 0.900);
+}
+/*---------------RESPONSIVE FORGOT TEXT----------------*/
+@media(max-width:400px){
+   .error-forgot-text{
+      font-size: 12px;
+   }
+}
+
+.warning-text-credential-container{
+   margin: 20px 0;
+   width: 100%;
+   display: inline-block;
+   text-align: center;
+}
+.warning-text-credential{
+   color: var(--color-red);
+}
+.warning-text-credential-success{
+   font-weight: bold;
+   color: var(--color-green);
+}

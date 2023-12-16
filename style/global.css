@@ -1,0 +1,15 @@
+
+:root{
+   --color-red: red;
+   --color-black: black;
+   --color-soft-red: rgba(255, 163, 163, 0.342);
+   --color-white: #f1f3f7;
+   --color-darker-white: rgb(203, 205, 207);
+   --color-bright-blue: #137ee2;
+   --color-dark-blue: #0c4d8a;
+   --color-darkest-blue: #083661;
+   --color-green: rgb(13, 192, 13);
+
+   --font-roboto: Roboto, sans-serif;
+   --font-open-sans: 'Open Sans', sans-serif;
+}

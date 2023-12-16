@@ -1,0 +1,93 @@
+header {
+   padding: 0 0;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   background-color: rgba(77, 75, 75, 0.555);
+   color: #fff;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+
+
+nav ul li a {
+
+   text-decoration: none;
+
+   color: #fff;
+
+}
+
+
+
+nav{            /* Make item left-side and right-side*/
+
+   display: flex;
+
+   align-items: center;            
+
+   justify-content: space-between;
+
+}
+
+nav ul {
+
+   list-style: none;
+
+}
+
+ul{
+
+   margin: 0;
+
+   padding: 0;
+
+}
+
+ul li {
+
+   display: inline-block;
+
+}
+
+.page-icon,
+.log-out{
+   text-decoration: none;
+   padding: 7px 10px;
+   border-radius: 5px;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-ul{
+   padding-left: 20px;
+   cursor: pointer;
+}
+#logo{
+   width: 50px;
+   height: auto;
+}
+
+
+.username{
+   margin-right: 10px;
+   font-size: 18px;
+}
+
+.log-out{
+   margin-right: 5px;
+   font-size: 18px;
+   background-color: #137ee2;
+}
+.log-out:hover {
+   background-color: #0c4d8a;
+}
+/*----------------RESPONSIVE USERNAME------------------*/
+@media (max-width: 400px){
+   .username,
+   .log-out{
+      font-size: 15px;
+   }
+}

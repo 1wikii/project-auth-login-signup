@@ -1,0 +1,11 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap");
+
+:root {
+  /* fonts */
+  --font-helvetica: Helvetica;
+  --font-avenir-next: 'AvenirNext';
+
+  /* Colors */
+  --color-black: #000;
+}
